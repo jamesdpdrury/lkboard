@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Data from Google Sheets</title>
+</head>
+<body>
+     <div id="rafiki">Loading...</div>
+    <div id="mufasa">Loading...</div>
+    <div id="sarabi">Loading...</div>
+    <div id="zazu">Loading...</div>
+    <div id="scar">Loading...</div>
+    <div id="youngSimba">Loading...</div>
+    <div id="youngNala">Loading...</div>
+    <div id="shenzi">Loading...</div>
+    <div id="banzai">Loading...</div>
+    <div id="ed">Loading...</div>
+    <div id="timon">Loading...</div>
+    <div id="pumbaa">Loading...</div>
+    <div id="simba">Loading...</div>
+    <div id="nala">Loading...</div>
+    <div id="ensemble">Loading...</div>
+    <div id="swings">Loading...</div>
+    <div id="walkingCovers">Loading...</div>
+    <div id="conductor">Loading...</div>
+
+    <iframe id="hidden-iframe" style="display:none;"></iframe>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const iframe = document.getElementById("hidden-iframe");
+            iframe.src = "https://script.google.com/macros/s/AKfycbxPhHH7wPoWbPUddYUDjMpzVIUSCbAkdc848j8PMDw6rZFNwb2MZCEuzSs65EtgX7JV8Q/exec";
+
+            window.addEventListener("message", function(event) {
+                if (event.origin !== "https://script.google.com" && event.origin !== "null") return;
+                const data = event.data;
+                updateDynamicData(data);
+            });
+        });
+
+        function updateDynamicData(data) {
+            document.getElementById("rafiki").innerText = "Rafiki: " + data.rafiki;
+            document.getElementById("mufasa").innerText = "Mufasa: " + data.mufasa;
+            document.getElementById("sarabi").innerText = "Sarabi: " + data.sarabi;
+            document.getElementById("zazu").innerText = "Zazu: " + data.zazu;
+            document.getElementById("scar").innerText = "Scar: " + data.scar;
+            document.getElementById("youngSimba").innerText = "Young Simba: " + data.youngSimba;
+            document.getElementById("youngNala").innerText = "Young Nala: " + data.youngNala;
+            document.getElementById("shenzi").innerText = "Shenzi: " + data.shenzi;
+            document.getElementById("banzai").innerText = "Banzai: " + data.banzai;
+            document.getElementById("ed").innerText = "Ed: " + data.ed;
+            document.getElementById("timon").innerText = "Timon: " + data.timon;
+            document.getElementById("pumbaa").innerText = "Pumbaa: " + data.pumbaa;
+            document.getElementById("simba").innerText = "Simba: " + data.simba;
+            document.getElementById("nala").innerText = "Nala: " + data.nala;
+            document.getElementById("ensemble").innerText = "Ensemble: " + data.ensemble;
+            document.getElementById("swings").innerText = "Swings: " + data.swings;
+            document.getElementById("walkingCovers").innerText = "Walking Covers: " + data.walkingCovers;
+            document.getElementById("conductor").innerText = "Conductor: " + data.conductor;
+        }
+    </script>
+</body>
+</html>
