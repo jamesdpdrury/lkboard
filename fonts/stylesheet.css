@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Sorren';
+    src: url('Sorren-Black.eot');
+    src: url('Sorren-Black.eot?#iefix') format('embedded-opentype'),
+        url('Sorren-Black.woff2') format('woff2'),
+        url('Sorren-Black.woff') format('woff'),
+        url('Sorren-Black.ttf') format('truetype'),
+        url('Sorren-Black.svg#Sorren-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sorren';
+    src: url('Sorren-Semibold.eot');
+    src: url('Sorren-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('Sorren-Semibold.woff2') format('woff2'),
+        url('Sorren-Semibold.woff') format('woff'),
+        url('Sorren-Semibold.ttf') format('truetype'),
+        url('Sorren-Semibold.svg#Sorren-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sorren';
+    src: url('Sorren-Medium.eot');
+    src: url('Sorren-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Sorren-Medium.woff2') format('woff2'),
+        url('Sorren-Medium.woff') format('woff'),
+        url('Sorren-Medium.ttf') format('truetype'),
+        url('Sorren-Medium.svg#Sorren-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sorren';
+    src: url('Sorren-Bold.eot');
+    src: url('Sorren-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Sorren-Bold.woff2') format('woff2'),
+        url('Sorren-Bold.woff') format('woff'),
+        url('Sorren-Bold.ttf') format('truetype'),
+        url('Sorren-Bold.svg#Sorren-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

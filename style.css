@@ -1,3 +1,57 @@
+@font-face {
+    font-family: 'Sorren';
+    src: url('fonts/Sorren-Black.eot');
+    src: url('fonts/Sorren-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Sorren-Black.woff2') format('woff2'),
+        url('fonts/Sorren-Black.woff') format('woff'),
+        url('fonts/Sorren-Black.ttf') format('truetype'),
+        url('fonts/Sorren-Black.svg#Sorren-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sorren';
+    src: url('fonts/Sorren-Semibold.eot');
+    src: url('fonts/Sorren-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Sorren-Semibold.woff2') format('woff2'),
+        url('fonts/Sorren-Semibold.woff') format('woff'),
+        url('fonts/Sorren-Semibold.ttf') format('truetype'),
+        url('fonts/Sorren-Semibold.svg#Sorren-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sorren';
+    src: url('fonts/Sorren-Medium.eot');
+    src: url('fonts/Sorren-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Sorren-Medium.woff2') format('woff2'),
+        url('fonts/Sorren-Medium.woff') format('woff'),
+        url('fonts/Sorren-Medium.ttf') format('truetype'),
+        url('fonts/Sorren-Medium.svg#Sorren-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sorren';
+    src: url('fonts/Sorren-Bold.eot');
+    src: url('fonts/Sorren-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Sorren-Bold.woff2') format('woff2'),
+        url('fonts/Sorren-Bold.woff') format('woff'),
+        url('fonts/Sorren-Bold.ttf') format('truetype'),
+        url('fonts/Sorren-Bold.svg#Sorren-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 body {
 width: 100vw;
 height: 100vh;
@@ -5,12 +59,14 @@ margin: -22px 0 0 0;
 padding: 0;
 color: #581d0f;
 text-align: center;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: Sorren;
 }
-.cast{
+.cast, .castblock{
     width: 100%;
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 45px;
+}
+.castblock {
+    margin-top: 20px;
 }
 .cast .character {
     width: calc(50% - 10px);
@@ -26,9 +82,19 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     text-align: left;
     padding-left: 10px;
 }
+.castblock .character {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.castblock .person {
+    width: 100%;
+    text-align: center;
+}
 .container {
-    width: 1080px;
-    height: 1920px;
+    width: 940px;
+    height: 1780px;
     background-image: url(Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,5 +103,51 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 h1 {
     text-transform: uppercase;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+h2 {
+    text-transform: uppercase;
     font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 100%;
+}
+.slide{
+    width: 100%;
+}
+.slide .right, .slide .left {
+width: 48%;
+}
+.slide .right {
+    text-align: right;
+    display: inline-block;
+    margin-left: 1%;
+    vertical-align: top;
+
+}
+.slide .left {
+    text-align: left;
+    margin-right: 1%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tech{
+    width: 100%;
+    font-size: 35px;
+}
+.department {
+    margin-bottom: 20px;
+}
+.tech .role {
+    display: inline-block;
+    font-weight: 900;
+    margin-right: 10px;
+}
+.tech .person {
+    display: inline-block;
 }
