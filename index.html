@@ -8,8 +8,22 @@
 </head>
 <body>
     <div class="container">
-        <div class="slide" id="slide1" style="display: none;">
-        
+        <div class="slide" id="slide1" >
+            <h1>Appearing at this performance</h1>
+            <div class="holder">
+                <div class="castFront show"><div class="character">The role of Rafiki will be played by <span id="rafiki">loading...</span></div></div>
+                <div class="castFront"><div class="character">The role of Mufasa will be played by <span id="mufasa">loading...</span></div></div>
+                <div class="castFront"><div class="character">The role of Sarabi will be played by <span id="sarabi">loading...</span></div></div>
+                <div class="castFront"><div class="character">The role of Zazu will be played by <span id="zazu">loading...</span></div></div>
+                <div class="castFront"><div class="character">The role of Scar will be played by <span id="scar">loading...</span></div></div>
+                <div class="castFront show"><div class="character">The role of Shenzi will be played by <span id="shenzi">loading...</span></div></div>
+                <div class="castFront"><div class="character">The role of Banzai will be played by <span id="banzai">loading...</span></div></div>
+                <div class="castFront"><div class="character">The role of Ed will be played by <span id="ed">loading...</span></div></div>
+                <div class="castFront"><div class="character">The role of Timon will be played by <span id="timon">loading...</span></div></div>
+                <div class="castFront"><div class="character">The role of Pumbaa will be played by <span id="pumbaa">loading...</span></div></div>
+                <div class="castFront"><div class="character">The role of Simba will be played by <span id="simba">loading...</span></div></div>
+                <div class="castFront"><div class="character">The role of Nala will be played by <span id="nala">loading...</span></div></div>
+            </div>  
         </div>
         <div class="slide" id="slide2">
             <h1>Appearing at this performance</h1>
@@ -35,7 +49,7 @@
             <div class="castblock"><div class="character">The Lion King Orchestra</div> <div id="orchestra">Loading...</div></div>
             <div class="castblock"><div class="character">Company Management</div> <div id="companyManager">Loading...</div><div id="deputyCompanyManager">Loading...</div></div>
         </div>
-        <div class="slide" id="slide3" style="display: none;">
+        <div class="slide" id="slide3">
             <h1>The Lion King Production Team</h1>
             <div class="left">
                 <div class="department">
@@ -191,27 +205,22 @@
             document.getElementById("assistantAuto").innerText = data.assistantAuto;
             document.getElementById("physio").innerText = data.physio;
             document.getElementById("wellbeing").innerText = data.wellbeing;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        }
+}
     </script>
-</body>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('visible');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('visible');
+        }
+
+        function startSlideshow() {
+            setInterval(nextSlide, 20000); // 20000ms = 20 seconds
+        }
+
+        document.addEventListener('DOMContentLoaded', startSlideshow);
+    </script>
 </html>

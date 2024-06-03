@@ -65,6 +65,18 @@ font-family: Sorren;
     width: 100%;
     font-size: 42px;
 }
+.castFront{
+    width: 100%;
+    font-size: 70px;
+    display: none;
+    flex-wrap: wrap;
+}
+.castFront .character {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
 .castblock {
     margin-top: 20px;
 }
@@ -100,6 +112,7 @@ font-family: Sorren;
     background-repeat: no-repeat;
     margin: 0 auto;
     padding: 20px;
+    position: absolute;
 }
 h1 {
     text-transform: uppercase;
@@ -116,8 +129,23 @@ h2 {
     margin-bottom: 0;
     width: 100%;
 }
-.slide{
+.holder {
     width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.show {display: block;}
+.slide{
+    position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 1040px;
+            height: 1880px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
 }
 .slide .right, .slide .left {
 width: 48%;
@@ -150,4 +178,7 @@ width: 48%;
 }
 .tech .person {
     display: inline-block;
+}
+.visible {
+    opacity: 1;
 }
