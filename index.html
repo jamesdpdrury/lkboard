@@ -8,205 +8,238 @@
 </head>
 <body>
     <div class="container">
-        <div class="slide" id="slide1" >
+        <div class="slide visible" id="slide1">
             <h1>Appearing at this performance</h1>
             <div class="holder">
-                <div class="castFront show"><div class="character">The role of Rafiki will be played by <span id="rafiki">loading...</span></div></div>
-                <div class="castFront"><div class="character">The role of Mufasa will be played by <span id="mufasa">loading...</span></div></div>
-                <div class="castFront"><div class="character">The role of Sarabi will be played by <span id="sarabi">loading...</span></div></div>
-                <div class="castFront"><div class="character">The role of Zazu will be played by <span id="zazu">loading...</span></div></div>
-                <div class="castFront"><div class="character">The role of Scar will be played by <span id="scar">loading...</span></div></div>
-                <div class="castFront show"><div class="character">The role of Shenzi will be played by <span id="shenzi">loading...</span></div></div>
-                <div class="castFront"><div class="character">The role of Banzai will be played by <span id="banzai">loading...</span></div></div>
-                <div class="castFront"><div class="character">The role of Ed will be played by <span id="ed">loading...</span></div></div>
-                <div class="castFront"><div class="character">The role of Timon will be played by <span id="timon">loading...</span></div></div>
-                <div class="castFront"><div class="character">The role of Pumbaa will be played by <span id="pumbaa">loading...</span></div></div>
-                <div class="castFront"><div class="character">The role of Simba will be played by <span id="simba">loading...</span></div></div>
-                <div class="castFront"><div class="character">The role of Nala will be played by <span id="nala">loading...</span></div></div>
+                <div id="covers" class="castFront character"></div>
             </div>  
         </div>
         <div class="slide" id="slide2">
             <h1>Appearing at this performance</h1>
-            <div class="cast"><div class="character">Rafiki</div><div class="person" id="rafiki">Loading...</div></div>
-            <div class="cast"><div class="character">Mufasa</div><div class="person" id="mufasa">Loading...</div></div>
-            <div class="cast"><div class="character">Sarabi</div><div class="person" id="sarabi">Loading...</div></div>
-            <div class="cast"><div class="character">Zazu</div><div class="person" id="zazu">Loading...</div></div>
-            <div class="cast"><div class="character">Scar</div><div class="person" id="scar">Loading...</div></div>
-            <div class="cast"><div class="character">Young Simba</div><div class="person" id="youngSimba">Loading...</div></div>
-            <div class="cast"><div class="character">Young Nala</div><div class="person" id="youngNala">Loading...</div></div>
-            <div class="cast"><div class="character">Shenzi</div><div class="person" id="shenzi">Loading...</div></div>
-            <div class="cast"><div class="character">Banzai</div><div class="person" id="banzai">Loading...</div></div>
-            <div class="cast"><div class="character">Ed</div><div class="person" id="ed">Loading...</div></div>
-            <div class="cast"><div class="character">Timon</div><div class="person" id="timon">Loading...</div></div>
-            <div class="cast"><div class="character">Pumbaa</div><div class="person" id="pumbaa">Loading...</div></div>
-            <div class="cast"><div class="character">Simba</div><div class="person" id="simba">Loading...</div></div>
-            <div class="cast"><div class="character">Nala</div><div class="person" id="nala">Loading...</div></div>
-            <div class="castblock"><div class="character">Ensemble</div> <div id="ensemble">Loading...</div></div>
-            <div class="castblock"><div class="character">Swings</div> <div id="swings">Loading...</div></div>
-            <div class="castblock"><div class="character">Walking Covers</div> <div id="walkingCovers">Loading...</div></div>
-            <div class="castblock"><div class="character">Ensemble</div> <div id="ensemble">Loading...</div></div>
-            <div class="castblock"><div class="character">This performance will be conducted by</div> <div id="conductor">Loading...</div></div>
-            <div class="castblock"><div class="character">The Lion King Orchestra</div> <div id="orchestra">Loading...</div></div>
-            <div class="castblock"><div class="character">Company Management</div> <div id="companyManager">Loading...</div><div id="deputyCompanyManager">Loading...</div></div>
+            <div class="cast"><div class="character">Rafiki</div><div class="person" id="rafiki"></div></div>
+            <div class="cast"><div class="character">Mufasa</div><div class="person" id="mufasa"></div></div>
+            <div class="cast"><div class="character">Sarabi</div><div class="person" id="sarabi"></div></div>
+            <div class="cast"><div class="character">Zazu</div><div class="person" id="zazu"></div></div>
+            <div class="cast"><div class="character">Scar</div><div class="person" id="scar"></div></div>
+            <div class="cast"><div class="character">Young Simba</div><div class="person" id="youngSimba"></div></div>
+            <div class="cast"><div class="character">Young Nala</div><div class="person" id="youngNala"></div></div>
+            <div class="cast"><div class="character">Shenzi</div><div class="person" id="shenzi"></div></div>
+            <div class="cast"><div class="character">Banzai</div><div class="person" id="banzai"></div></div>
+            <div class="cast"><div class="character">Ed</div><div class="person" id="ed"></div></div>
+            <div class="cast"><div class="character">Timon</div><div class="person" id="timon"></div></div>
+            <div class="cast"><div class="character">Pumbaa</div><div class="person" id="pumbaa"></div></div>
+            <div class="cast"><div class="character">Simba</div><div class="person" id="simba"></div></div>
+            <div class="cast"><div class="character">Nala</div><div class="person" id="nala"></div></div>
+            <div class="castblock"><div class="character">Ensemble</div> <div id="ensemble"></div></div>
+            <div class="castblock"><div class="character">Swings</div> <div id="swings"></div></div>
+            <div class="castblock"><div class="character">Walking Covers</div> <div id="walkingCovers"></div></div>
+            <div class="castblock"><div class="character">This performance will be conducted by</div> <div id="conductor"></div></div>
+            <div class="castblock"><div class="character">The Lion King Orchestra</div> <div id="orchestra"></div></div>
+            <div class="castblock"><div class="character">Company Management</div> <div id="companyManager"></div><div id="deputyCompanyManager"></div></div>
         </div>
         <div class="slide" id="slide3">
             <h1>The Lion King Production Team</h1>
             <div class="left">
                 <div class="department">
                     <h2>STAGE</h2>
-                    <div class="tech"><div class="role">Head of Stage</div><div class="person" id="headStage">Loading...</div></div>
-                    <div class="tech"><div class="role">Deputy Head of Stage</div><div class="person" id="deputyHeadStage">Loading...</div></div>
-                    <div class="tech"><div class="role">Assistant Stage</div><div class="person" id="assistantStage">Loading...</div></div>
-                    <div class="tech"><div class="role">Stage Technicians - Swings</div><div class="person" id="stageTech">Loading...</div></div>
-                    <div class="tech"><div class="role">Stage Crew</div><div class="person" id="stageCrew">Loading...</div></div>
+                    <div class="tech" id="headStage"></div>
+                    <div class="tech" id="deputyStageHead"></div>
+                    <div class="tech" id="assistantStage"></div>
+                    <div class="tech" id="stageTech"></div>
+                    <div class="tech" id="stageCrew"></div>
                 </div>
                 <div class="department">
                     <h2>ELECTRICS</h2>
-                    <div class="tech"><div class="role">Head of Electrics</div><div class="person" id="headLX">Loading...</div></div>
-                    <div class="tech"><div class="role">Deputy Head of Electrics</div><div class="person" id="deputyHeadLX">Loading...</div></div>
-                    <div class="tech"><div class="role">Assistant Electrics</div><div class="person" id="assistantLX">Loading...</div></div>
-                    <div class="tech"><div class="role">Stage Electricians/Follow Spot</div><div class="person" id="spots">Loading...</div></div>
-                    <div class="tech"><div class="role">Trainee</div><div class="person" id="traineeLX">Loading...</div></div>
+                    <div class="tech" id="headLX"></div>
+                    <div class="tech" id="deputyHeadLX"></div>
+                    <div class="tech" id="assistantLX"></div>
+                    <div class="tech" id="spots"></div>
+                    <div class="tech" id="traineeLX"></div>
                 </div>
                 <div class="department">
                     <h2>SOUND</h2>
-                    <div class="tech"><div class="role">Head of Sound</div><div class="person" id="headSound">Loading...</div></div>
-                    <div class="tech"><div class="role">Deputy Head of Sound</div><div class="person" id="deputyHeadSound">Loading...</div></div>
-                    <div class="tech"><div class="role">Senior Mixer</div><div class="person" id="seniorMixer">Loading...</div></div>
-                    <div class="tech"><div class="role">Assistant Sound</div><div class="person" id="assistantSound">Loading...</div></div>
+                    <div class="tech" id="headSound"></div>
+                    <div class="tech" id="deputyHeadSound"></div>
+                    <div class="tech" id="seniorMixer"></div>
+                    <div class="tech" id="assistantSound"></div>
                 </div>
                 <div class="department">
                     <h2>WARDROBE</h2>
-                    <div class="tech"><div class="role">Head of Wardrobe</div><div class="person" id="headWardrobe">Loading...</div></div>
-                    <div class="tech"><div class="role">Deputy Head of Wardrobe</div><div class="person" id="deputyHeadWardrobe">Loading...</div></div>
-                    <div class="tech"><div class="role">Wardrobe Assistants</div><div class="person" id="assistantWardrobe">Loading...</div></div>
-                    <div class="tech"><div class="role">Wardrobe Swing Assistants</div><div class="person" id="assistantWardrobeSwings">Loading...</div></div>
-                    <div class="tech"><div class="role">Swing Dresser</div><div class="person" id="swingDresser">Loading...</div></div>
-                    <div class="tech"><div class="role">Dressers</div><div class="person" id="dressers">Loading...</div></div>
+                    <div class="tech" id="headWardrobe"></div>
+                    <div class="tech" id="deputyHeadWardrobe"></div>
+                    <div class="tech" id="assistantWardrobe"></div>
+                    <div class="tech" id="assistantWardrobeSwings"></div>
+                    <div class="tech" id="swingDresser"></div>
+                    <div class="tech" id="dressers"></div>
                 </div>
             </div><div class="right">
                 <div class="department">
                     <h2>STAGE MANAGEMENT</h2>
-                    <div class="tech"><div class="role">Stage Manager</div><div class="person" id="stageManager">Loading...</div></div>
-                    <div class="tech"><div class="role">Deputy Stage Manager</div><div class="person" id="deputyStageManager">Loading...</div></div>
-                    <div class="tech"><div class="role">Assistant Stage Manager - Book Cover</div><div class="person" id="asmBook">Loading...</div></div>
-                    <div class="tech"><div class="role">Assistant Stage Manager</div><div class="person" id="asm">Loading...</div></div>
-                    <div class="tech"><div class="role">Technical Assistant Stage Manager</div><div class="person" id="asmTech">Loading...</div></div>
+                    <div class="tech" id="stageManager"></div>
+                    <div class="tech" id="deputyStageManager"></div>
+                    <div class="tech" id="asmBook"></div>
+                    <div class="tech" id="asm"></div>
+                    <div class="tech" id="asmTech"></div>
                 </div>
                 <div class="department">
                     <h2>MASKS AND PUPPETS</h2>
-                    <div class="tech"><div class="role">Head of Masks & Puppets</div><div class="person" id="headPuppets">Loading...</div></div>
-                    <div class="tech"><div class="role">Deputy Head of Masks & Puppets</div><div class="person" id="deputyHeadPuppets">Loading...</div></div>
-                    <div class="tech"><div class="role">Assistant Masks & Puppets</div><div class="person" id="assistantPuppets">Loading...</div></div>
-                    <div class="tech"><div class="role">Production Fabricators</div><div class="person" id="fabricators">Loading...</div></div>
+                    <div class="tech" id="headPuppets"></div>
+                    <div class="tech" id="deputyHeadPuppets"></div>
+                    <div class="tech" id="assistantPuppets"></div>
+                    <div class="tech" id="fabricators"></div>
                 </div>
                 <div class="department">
                     <h2>HAIR AND MAKE-UP</h2>
-                    <div class="tech"><div class="role">Head of Hair & Make-up</div><div class="person" id="headWHAM">Loading...</div></div>
-                    <div class="tech"><div class="role">Deputy Head of Hair & Make-up</div><div class="person" id="deputyWHAM">Loading...</div></div>
-                    <div class="tech"><div class="role">Assistant Hair & Make-up</div><div class="person" id="assistantWHAM">Loading...</div></div>
+                    <div class="tech" id="headWHAM"></div>
+                    <div class="tech" id="deputyWHAM"></div>
+                    <div class="tech" id="assistantWHAM"></div>
                 </div>
                 <div class="department">
                     <h2>CHAPERONES</h2>
-                    <div class="tech"><div class="role">Head Chaperone</div><div class="person" id="headChaperone">Loading...</div></div>
-                    <div class="tech"><div class="role">Deputy Head Chaperone</div><div class="person" id="deputyHeadChaperone">Loading...</div></div>
-                    <div class="tech"><div class="role">Chaperones</div><div class="person" id="chaperone">Loading...</div></div>
+                    <div class="tech" id="headChaperone"></div>
+                    <div class="tech" id="deputyHeadChaperone"></div>
+                    <div class="tech" id="chaperone"></div>
                 </div>
                 <div class="department">
                     <h2>AUTOMATION</h2>
-                    <div class="tech"><div class="role">Head of Automation</div><div class="person" id="headAuto">Loading...</div></div>
-                    <div class="tech"><div class="role">Deputy Head of Automation</div><div class="person" id="deputyHeadAuto">Loading...</div></div>
-                    <div class="tech"><div class="role">Assistant Automation</div><div class="person" id="assistantAuto">Loading...</div></div>
+                    <div class="tech" id="headAuto"></div>
+                    <div class="tech" id="deputyHeadAuto"></div>
+                    <div class="tech" id="assistantAuto"></div>
                 </div>
                 <div class="department">
                     <h2>PHYSIOTHERAPY</h2>
-                    <div class="tech"><div class="person" id="physio">Loading...</div></div>
+                    <div class="tech"><span class="person" id="physio"></span></div>
                 </div>
                 <div class="department">
                     <h2>WELLBEING</h2>
-                    <div class="tech"><div class="person" id="wellbeing">Loading...</div></div>
+                    <div class="tech"><span class="person" id="wellbeing"></span></div>
                 </div>
             </div>
         </div>
     </div>
-    <iframe id="hidden-iframe" style="display:none;"></iframe>
+    <iframe src="https://script.google.com/macros/s/AKfycbz-xQtunVDdXA4Xa2dweolffp2fsAVMZi_ErS-Evc836KzPfj1u7eWKRJudswOdhhd4uw/exec" id="data-iframe"></iframe>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const iframe = document.getElementById("hidden-iframe");
-            iframe.src = "https://script.google.com/macros/s/AKfycbz-xQtunVDdXA4Xa2dweolffp2fsAVMZi_ErS-Evc836KzPfj1u7eWKRJudswOdhhd4uw/exec";
+        function convertNewlinesToBreaks(text) {
+          return text.replace(/\n/g, '<br>');
+        }
+      
+        // Listen for messages from the iframe
+        window.addEventListener('message', function(event) {
+          var data = event.data;
+      
+          // Check if the data is of expected type/format
+          if (typeof data === 'object' && data !== null) {
+            // Update the content of the divs with the received data
+            document.getElementById("rafiki").innerText = data.rafiki || 'loading...';
+            document.getElementById("mufasa").innerText = data.mufasa || 'loading...';
+            document.getElementById("sarabi").innerText = data.sarabi || 'loading...';
+            document.getElementById("zazu").innerText = data.zazu || 'loading...';
+            document.getElementById("scar").innerText = data.scar || 'loading...';
+            document.getElementById("youngSimba").innerText = data.youngSimba || 'loading...';
+            document.getElementById("youngNala").innerText = data.youngNala || 'loading...';
+            document.getElementById("shenzi").innerText = data.shenzi || 'loading...';
+            document.getElementById("banzai").innerText = data.banzai || 'loading...';
+            document.getElementById("ed").innerText = data.ed || 'loading...';
+            document.getElementById("timon").innerText = data.timon || 'loading...';
+            document.getElementById("pumbaa").innerText = data.pumbaa || 'loading...';
+            document.getElementById("simba").innerText = data.simba || 'loading...';
+            document.getElementById("nala").innerText = data.nala || 'loading...';
+            document.getElementById("ensemble").innerText = data.ensemble || 'loading...';
+            document.getElementById("swings").innerText = data.swings || 'loading...';
+            document.getElementById("walkingCovers").innerText = data.walkingCovers || 'loading...';
+            document.getElementById("conductor").innerText = data.conductor || 'loading...';
+            document.getElementById("orchestra").innerText = data.orchestra || 'loading...';
+            document.getElementById("companyManager").innerText = "Company Manager: " + data.companyManager || 'loading...';
+            document.getElementById("deputyCompanyManager").innerText = "Deputy Company Manager: " + data.deputyCompanyManager || 'loading...';
+      
+            document.getElementById("covers").innerHTML = (convertNewlinesToBreaks(data.coversList || 'The full 25th Anniversary Cast of The Lion King'));
 
-            window.addEventListener("message", function(event) {
-                if (event.origin !== "https://script.google.com" && event.origin !== "null") return;
-                const data = event.data;
-                updateDynamicData(data);
-            });
+            
+            // Convert newlines to <br> in the data fields
+            document.getElementById("headStage").innerHTML = 
+              '<span class="role">Head of Stage</span> ' + (convertNewlinesToBreaks(data.headStage || 'loading...'));
+            document.getElementById("deputyStageHead").innerHTML = 
+              '<span class="role">Deputy Head of Stage</span> ' + (convertNewlinesToBreaks(data.deputyDeadStage || 'loading...'));
+            document.getElementById("assistantStage").innerHTML = 
+              '<span class="role">Assistant Stage</span> ' + (convertNewlinesToBreaks(data.assistantStage || 'loading...'));
+            document.getElementById("stageTech").innerHTML = 
+              '<span class="role">Stage Technicians - Swings</span> ' + (convertNewlinesToBreaks(data.stageTech || 'loading...'));
+            document.getElementById("stageCrew").innerHTML = 
+              '<span class="role">Stage Crew</span> ' + (convertNewlinesToBreaks(data.stageCrew || 'loading...'));
+            document.getElementById("headLX").innerHTML = 
+              '<span class="role">Head of Electrics</span> ' + (convertNewlinesToBreaks(data.headLX || 'loading...'));
+            document.getElementById("deputyHeadLX").innerHTML = 
+              '<span class="role">Deputy Head of Electrics</span> ' + (convertNewlinesToBreaks(data.deputyHeadLX || 'loading...'));
+            document.getElementById("assistantLX").innerHTML = 
+              '<span class="role">Assistant Electrics</span> ' + (convertNewlinesToBreaks(data.assistantLX || 'loading...'));
+            document.getElementById("spots").innerHTML = 
+              '<span class="role">Stage Electricians/Follow Spot</span> ' + (convertNewlinesToBreaks(data.spots || 'loading...'));
+            document.getElementById("traineeLX").innerHTML = 
+              '<span class="role">Trainee</span> ' + (convertNewlinesToBreaks(data.tranieeLX || 'loading...'));
+            document.getElementById("headSound").innerHTML = 
+              '<span class="role">Head of Sound</span> ' + (convertNewlinesToBreaks(data.headSound || 'loading...'));
+            document.getElementById("deputyHeadSound").innerHTML = 
+              '<span class="role">Deputy Head of Sound</span> ' + (convertNewlinesToBreaks(data.deputyHeadSound || 'loading...'));
+            document.getElementById("seniorMixer").innerHTML = 
+              '<span class="role">Senior Mixer</span> ' + (convertNewlinesToBreaks(data.seniorMixer || 'loading...'));
+            document.getElementById("assistantSound").innerHTML = 
+              '<span class="role">Assistant Sound</span> ' + (convertNewlinesToBreaks(data.assistantSound || 'loading...'));
+            document.getElementById("headWardrobe").innerHTML = 
+              '<span class="role">Head of Wardrobe</span> ' + (convertNewlinesToBreaks(data.headWardrobe || 'loading...'));
+            document.getElementById("deputyHeadWardrobe").innerHTML = 
+              '<span class="role">Deputy Head of Wardrobe</span> ' + (convertNewlinesToBreaks(data.deputyHeadWardrobe || 'loading...'));
+            document.getElementById("assistantWardrobe").innerHTML = 
+              '<span class="role">Wardrobe Assistants</span> ' + (convertNewlinesToBreaks(data.assistantWardrobe || 'loading...'));
+            document.getElementById("assistantWardrobeSwings").innerHTML = 
+              '<span class="role">Wardrobe Swing Assistants</span> ' + (convertNewlinesToBreaks(data.assistantWardrobeSwings || 'loading...'));
+            document.getElementById("swingDresser").innerHTML = 
+              '<span class="role">Swing Dresser</span> ' + (convertNewlinesToBreaks(data.swingDresser || 'loading...'));
+            document.getElementById("dressers").innerHTML = 
+              '<span class="role">Dressers</span> ' + (convertNewlinesToBreaks(data.dressers || 'loading...'));
+            document.getElementById("stageManager").innerHTML = 
+              '<span class="role">Stage Manager</span> ' + (convertNewlinesToBreaks(data.stageManager || 'loading...'));
+            document.getElementById("deputyStageManager").innerHTML = 
+              '<span class="role">Deputy Stage Manager</span> ' + (convertNewlinesToBreaks(data.deputyStageManager || 'loading...'));
+            document.getElementById("asmBook").innerHTML = 
+              '<span class="role">Assistant Stage Manager - Book Covers</span> ' + (convertNewlinesToBreaks(data.asmBook || 'loading...'));
+            document.getElementById("asm").innerHTML = 
+              '<span class="role">Assistant Stage Manager</span> ' + (convertNewlinesToBreaks(data.asm || 'loading...'));
+            document.getElementById("asmTech").innerHTML = 
+              '<span class="role">Technical Assistant Stage Manager</span> ' + (convertNewlinesToBreaks(data.asmTech || 'loading...'));
+            document.getElementById("headPuppets").innerHTML = 
+              '<span class="role">Head of Masks & Puppets</span> ' + (convertNewlinesToBreaks(data.headPuppets || 'loading...'));
+            document.getElementById("deputyHeadPuppets").innerHTML = 
+              '<span class="role">Deputy Head of Masks & Puppets</span> ' + (convertNewlinesToBreaks(data.deputyHeadPuppets || 'loading...'));
+            document.getElementById("assistantPuppets").innerHTML = 
+              '<span class="role">Assistant Masks & Puppets</span> ' + (convertNewlinesToBreaks(data.assistantPuppets || 'loading...'));
+            document.getElementById("fabricators").innerHTML = 
+              '<span class="role">Production Fabricators</span> ' + (convertNewlinesToBreaks(data.fabricators || 'loading...'));
+            document.getElementById("headWHAM").innerHTML = 
+              '<span class="role">Head of Hair & Make-Up</span> ' + (convertNewlinesToBreaks(data.headWHAM || 'loading...'));
+            document.getElementById("deputyWHAM").innerHTML = 
+              '<span class="role">Deputy Head of Hair & Make-Up</span> ' + (convertNewlinesToBreaks(data.deputyWHAM || 'loading...'));
+            document.getElementById("assistantWHAM").innerHTML = 
+              '<span class="role">Assistant Hair & Make-Up</span> ' + (convertNewlinesToBreaks(data.assistantWHAM || 'loading...'));
+            document.getElementById("headChaperone").innerHTML = 
+              '<span class="role">Head Chaperone</span> ' + (convertNewlinesToBreaks(data.headChaperone || 'loading...'));
+            document.getElementById("deputyHeadChaperone").innerHTML = 
+              '<span class="role">Deputy Head Chaperone</span> ' + (convertNewlinesToBreaks(data.deputyHeadChaperone || 'loading...'));
+            document.getElementById("chaperone").innerHTML = 
+              '<span class="role">Chaperones</span> ' + (convertNewlinesToBreaks(data.chaperone || 'loading...'));
+            document.getElementById("headAuto").innerHTML = 
+              '<span class="role">Head of Automation</span> ' + (convertNewlinesToBreaks(data.headAuto || 'loading...'));
+            document.getElementById("deputyHeadAuto").innerHTML = 
+              '<span class="role">Deputy Head of Automation</span> ' + (convertNewlinesToBreaks(data.deputyHeadAuto || 'loading...'));
+            document.getElementById("assistantAuto").innerHTML = 
+              '<span class="role">Assistant Automation</span> ' + (convertNewlinesToBreaks(data.assistantAuto || 'loading...'));
+            document.getElementById("physio").innerText = data.physio || 'loading...';
+            document.getElementById("wellbeing").innerText = data.wellbeing || 'loading...';
+          }
         });
-
-        function updateDynamicData(data) {
-            document.getElementById("rafiki").innerText = data.rafiki;
-            document.getElementById("mufasa").innerText = data.mufasa;
-            document.getElementById("sarabi").innerText = data.sarabi;
-            document.getElementById("zazu").innerText = data.zazu;
-            document.getElementById("scar").innerText = data.scar;
-            document.getElementById("youngSimba").innerText = data.youngSimba;
-            document.getElementById("youngNala").innerText = data.youngNala;
-            document.getElementById("shenzi").innerText = data.shenzi;
-            document.getElementById("banzai").innerText = data.banzai;
-            document.getElementById("ed").innerText = data.ed;
-            document.getElementById("timon").innerText = data.timon;
-            document.getElementById("pumbaa").innerText = data.pumbaa;
-            document.getElementById("simba").innerText = data.simba;
-            document.getElementById("nala").innerText = data.nala;
-            document.getElementById("ensemble").innerText = data.ensemble;
-            document.getElementById("swings").innerText = data.swings;
-            document.getElementById("walkingCovers").innerText = data.walkingCovers;
-            document.getElementById("conductor").innerText = data.conductor;
-            document.getElementById("orchestra").innerText = data.orchestra;
-            document.getElementById("companyManager").innerText = "Company Manager: " + data.companyManager;
-            document.getElementById("deputyCompanyManager").innerText = "Deputy Company Manager: " + data.deputyCompanyManager;
-            document.getElementById("headStage").innerText = data.headStage;
-            document.getElementById("deputyHeadStage").innerText = data.deputyHeadStage;
-            document.getElementById("assistantStage").innerText = data.assistantStage;
-            document.getElementById("stageTech").innerText = data.stageTech;
-            document.getElementById("stageCrew").innerText = data.stageCrew;
-            document.getElementById("headLX").innerText = data.headLX;
-            document.getElementById("deputyHeadLX").innerText = data.deputyHeadLX;
-            document.getElementById("assistantLX").innerText = data.assistantLX;
-            document.getElementById("spots").innerText = data.spots;
-            document.getElementById("traineeLX").innerText = data.traineeLX;
-            document.getElementById("headSound").innerText = data.headSoudnd;
-            document.getElementById("deputyHeadSound").innerText = data.deputyHeadSound;
-            document.getElementById("seniorMixer").innerText = data.seniorMixer;
-            document.getElementById("assistantSound").innerText = data.assistantSound;
-            document.getElementById("headWardrobe").innerText = data.headWardrobe;
-            document.getElementById("deputyHeadWardrobe").innerText = data.deputyHeadWardrobe;
-            document.getElementById("assistantWardrobe").innerText = data.assistantWardrobe;
-            document.getElementById("assistantWardrobeSwings").innerText = data.assistantWardrobeSwings;
-            document.getElementById("swingDresser").innerText = data.swingDresser;
-            document.getElementById("dresser").innerText = data.dresser;
-            document.getElementById("stageManager").innerText = data.stageManager;
-            document.getElementById("deputyStageManager").innerText = data.deputyStageManager;
-            document.getElementById("asmBook").innerText = data.asmBook;
-            document.getElementById("asm").innerText = data.asm;
-            document.getElementById("asmTech").innerText = data.asmTech;
-            document.getElementById("headPuppets").innerText = data.headPuppet;
-            document.getElementById("deputyHeadPuppets").innerText = data.deputyHeadPuppets;
-            document.getElementById("assistantPuppets").innerText = data.assistantPuppets;
-            document.getElementById("fabricators").innerText = data.fabricators;
-            document.getElementById("headWHAM").innerText = data.headWHAM;
-            document.getElementById("deputyWHAM").innerText = data.deputyWHAM;
-            document.getElementById("assistantWHAM").innerText = data.assistantWHAM;
-            document.getElementById("headChaperone").innerText = data.headChaperone;
-            document.getElementById("deputyHeadChaperone").innerText = data.deputyHeadChaperone;
-            document.getElementById("chaperone").innerText = data.chaperone;
-            document.getElementById("headAuto").innerText = data.headAuto;
-            document.getElementById("deputyHeadAuto").innerText = data.deputyHeadAuto;
-            document.getElementById("assistantAuto").innerText = data.assistantAuto;
-            document.getElementById("physio").innerText = data.physio;
-            document.getElementById("wellbeing").innerText = data.wellbeing;
-}
-    </script>
+      </script>
+      
+  
     <script>
         const slides = document.querySelectorAll('.slide');
         let currentSlide = 0;
@@ -223,4 +256,12 @@
 
         document.addEventListener('DOMContentLoaded', startSlideshow);
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set an interval to reload the page every hour (3600000 milliseconds)
+            setInterval(function() {
+                window.location.reload();
+            }, 3600000);
+        });
+        </script>
 </html>
