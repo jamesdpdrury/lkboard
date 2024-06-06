@@ -63,7 +63,7 @@ font-family: Sorren;
 }
 .cast, .castblock{
     width: 100%;
-    font-size: 19px;
+    font-size: 20px;
 }
 .castFront{
     width: 100%;
@@ -106,7 +106,7 @@ font-family: Sorren;
 }
 .container {
     width: 501px;
-    height: 941px;
+    height: 945px;
     background-image: url(Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ h1 {
 }
 h2 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 0;
     width: 100%;
