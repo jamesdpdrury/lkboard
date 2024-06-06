@@ -69,12 +69,13 @@ font-family: Sorren;
     width: 100%;
     font-size: 30px;
     flex-wrap: wrap;
-    font-weight: 900;
 }
 .castFront .character {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
+}
+.castFront span {
     font-weight: 900;
 }
 .castblock {
@@ -140,26 +141,26 @@ h2 {
 .cover, .covers {display: block!important;}
 .slide{
     position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 501px;
-            height: 910px;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
+    top: 20px;
+    left: 20px;
+    width: 501px;
+    height: 910px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 .slide .right, .slide .left {
-width: 46%;
+width: 48%;
 }
 .slide .right {
     text-align: right;
     display: inline-block;
-    margin-left: 2%;
+    margin-left: 1%;
     vertical-align: top;
 
 }
 .slide .left {
     text-align: left;
-    margin-right: 2%;
+    margin-right: 1%;
     display: inline-block;
     vertical-align: top;
 }
@@ -173,7 +174,7 @@ width: 46%;
 .tech .role {
     display: inline-block;
     font-weight: 900;
-    margin-right: 5px;
+    margin-right: 2px;
 }
 .tech .person {
     display: inline-block;
