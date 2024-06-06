@@ -54,7 +54,7 @@
 
 body {
     width: 1080px;
-    height: 1920px;
+    height: 1942px;
 margin: -22px 0 0 0;
 padding: 0;
 color: #581d0f;
@@ -106,7 +106,7 @@ font-family: Sorren;
 }
 .container {
     width: 501px;
-    height: 917px;
+    height: 941px;
     background-image: url(Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
