@@ -138,6 +138,11 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.logo {
+    margin-top: 200px;
+    width: 100%;
+}
 .cover, .covers {display: block!important;}
 .slide{
     position: absolute;

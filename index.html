@@ -8,11 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="slide visible" id="slide1">
-            <h1>Appearing at this performance</h1>
-            <div class="holder">
-                <div id="covers" class="castFront character"></div>
-            </div>  
+       <div class="slide visible" id="slide1">
         </div>
         <div class="slide" id="slide2">
             <h1>Appearing at this performance</h1>
@@ -153,7 +149,16 @@
             document.getElementById("companyManager").innerText = "Company Manager: " + data.companyManager || 'loading...';
             document.getElementById("deputyCompanyManager").innerText = "Deputy Company Manager: " + data.deputyCompanyManager || 'loading...';
       
-            document.getElementById("covers").innerHTML = (convertNewlinesToBreaks(data.coversList || 'The full 25th Anniversary Cast of The Lion King'));
+            // Assuming data.coversList is a string, you can check if it's empty or not
+if (data.coversList && data.coversList.trim() !== '') {
+    document.getElementById("slide1").innerHTML = 
+        '<h1>Appearing at this performance</h1><div class="holder"><div id="covers" class="castFront character">' + 
+        (convertNewlinesToBreaks(data.coversList)) + 
+        '</div></div>';
+} else {
+    document.getElementById("slide1").innerHTML = '<img class="logo" id="lion" src="Logo.png">';
+}
+
 
             
             // Convert newlines to <br> in the data fields
@@ -251,17 +256,26 @@
         }
 
         function startSlideshow() {
-            setInterval(nextSlide, 20000); // 20000ms = 20 seconds
+            setInterval(nextSlide, 25000); // 20000ms = 20 seconds
         }
 
         document.addEventListener('DOMContentLoaded', startSlideshow);
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Set an interval to reload the page every hour (3600000 milliseconds)
+            // Set an interval to reload the page every hour (2700000 milliseconds)
             setInterval(function() {
                 window.location.reload();
             }, 3600000);
         });
-        </script>
+        </script>\<script>
+function startAnimation() {
+    const lion = document.getElementById("lion");
+    lion.classList.add("grow");
+
+    setInterval(() => {
+        lion.classList.toggle("grow");
+    }, 20000);
+}
+</script>
 </html>
