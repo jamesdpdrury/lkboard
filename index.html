@@ -11,7 +11,7 @@
        <div class="slide visible" id="slide1">
         </div>
         <div class="slide" id="slide2">
-            <h1>Appearing at this performance</h1>
+            <h1 id="performance2">Appearing at this <span id="type2"></span> performance</h1>
             <div class="cast"><div class="character">Rafiki</div><div class="person" id="rafiki"></div></div>
             <div class="cast"><div class="character">Mufasa</div><div class="person" id="mufasa"></div></div>
             <div class="cast"><div class="character">Sarabi</div><div class="person" id="sarabi"></div></div>
@@ -127,6 +127,7 @@
           // Check if the data is of expected type/format
           if (typeof data === 'object' && data !== null) {
             // Update the content of the divs with the received data
+            document.getElementById("type2").innerText = data.performance2 || '';
             document.getElementById("rafiki").innerText = data.rafiki || 'loading...';
             document.getElementById("mufasa").innerText = data.mufasa || 'loading...';
             document.getElementById("sarabi").innerText = data.sarabi || 'loading...';
@@ -152,7 +153,7 @@
             // Assuming data.coversList is a string, you can check if it's empty or not
 if (data.coversList && data.coversList.trim() !== '') {
     document.getElementById("slide1").innerHTML = 
-        '<h1>Appearing at this performance</h1><div class="holder"><div id="covers" class="castFront character">' + 
+        '<h1>Appearing at this <span>' + (convertNewlinesToBreaks(data.performance)) + '</span> performance</h1><div class="holder"><div id="covers" class="castFront character">' + 
         (convertNewlinesToBreaks(data.coversList)) + 
         '</div></div>';
 } else {
@@ -245,28 +246,43 @@ if (data.coversList && data.coversList.trim() !== '') {
       </script>
       
   
-    <script>
+      <script>
         const slides = document.querySelectorAll('.slide');
         let currentSlide = 0;
-
+        let interval;
+    
         function nextSlide() {
             slides[currentSlide].classList.remove('visible');
             currentSlide = (currentSlide + 1) % slides.length;
             slides[currentSlide].classList.add('visible');
+            
+            // Clear the previous interval
+            clearInterval(interval);
+            
+            // Set the new interval based on the current slide
+            if (currentSlide === 0) {
+                interval = setInterval(nextSlide, 10000); // 10000ms = 10 seconds for the first slide
+            } else {
+                interval = setInterval(nextSlide, 20000); // 20000ms = 20 seconds for the other slides
+            }
         }
-
+    
         function startSlideshow() {
-            setInterval(nextSlide, 25000); // 20000ms = 20 seconds
+            // Start with the first slide
+            slides[currentSlide].classList.add('visible');
+            // Set the initial interval
+            interval = setInterval(nextSlide, 10000); // 10000ms = 10 seconds for the first slide
         }
-
+    
         document.addEventListener('DOMContentLoaded', startSlideshow);
     </script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Set an interval to reload the page every hour (2700000 milliseconds)
+            // Set an interval to reload the page every 45 minutes (2700000 milliseconds)
             setInterval(function() {
                 window.location.reload();
-            }, 3600000);
+            }, 2700000);
         });
         </script>\<script>
 function startAnimation() {
