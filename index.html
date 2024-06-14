@@ -8,9 +8,7 @@
 </head>
 <body>
     <div class="container">
-       <div class="slide visible" id="slide1">
-        </div>
-        <div class="slide" id="slide2">
+        <div class="slide" id="slide1">
             <h1 id="performance2">Appearing at this <span id="type2"></span> performance</h1>
             <div class="cast"><div class="character">Rafiki</div><div class="person" id="rafiki"></div></div>
             <div class="cast"><div class="character">Mufasa</div><div class="person" id="mufasa"></div></div>
@@ -33,7 +31,7 @@
             <div class="castblock"><div class="character">The Lion King Orchestra</div> <div id="orchestra"></div></div>
             <div class="castblock"><div class="character">Company Management</div> <span style="margin-right: 10px;" id="companyManager"></span><span id="deputyCompanyManager"></span></div>
         </div>
-        <div class="slide" id="slide3">
+        <div class="slide" id="slide2">
             <h1>The Lion King Production Team</h1>
             <div class="left">
                 <div class="department">
@@ -151,14 +149,6 @@
             document.getElementById("deputyCompanyManager").innerText = "Deputy Company Manager: " + data.deputyCompanyManager || 'loading...';
       
             // Assuming data.coversList is a string, you can check if it's empty or not
-if (data.coversList && data.coversList.trim() !== '') {
-    document.getElementById("slide1").innerHTML = 
-        '<h1>Appearing at this <span>' + (convertNewlinesToBreaks(data.performance)) + '</span> performance</h1><div class="holder"><div id="covers" class="castFront character">' + 
-        (convertNewlinesToBreaks(data.coversList)) + 
-        '</div></div>';
-} else {
-    document.getElementById("slide1").innerHTML = '<img class="logo" id="lion" src="Logo.png">';
-}
 
 
             
@@ -261,7 +251,7 @@ if (data.coversList && data.coversList.trim() !== '') {
             
             // Set the new interval based on the current slide
             if (currentSlide === 0) {
-                interval = setInterval(nextSlide, 10000); // 10000ms = 10 seconds for the first slide
+                interval = setInterval(nextSlide, 20000); // 10000ms = 10 seconds for the first slide
             } else {
                 interval = setInterval(nextSlide, 20000); // 20000ms = 20 seconds for the other slides
             }
@@ -271,7 +261,7 @@ if (data.coversList && data.coversList.trim() !== '') {
             // Start with the first slide
             slides[currentSlide].classList.add('visible');
             // Set the initial interval
-            interval = setInterval(nextSlide, 10000); // 10000ms = 10 seconds for the first slide
+            interval = setInterval(nextSlide, 20000); // 10000ms = 10 seconds for the first slide
         }
     
         document.addEventListener('DOMContentLoaded', startSlideshow);
