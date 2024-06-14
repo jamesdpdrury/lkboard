@@ -9,27 +9,27 @@
 <body>
     <div class="container">
         <div class="slide" id="slide1">
-            <h1 id="performance2">Appearing at this <span id="type2"></span> performance</h1>
-            <div class="cast"><div class="character">Rafiki</div><div class="person" id="rafiki"></div></div>
-            <div class="cast"><div class="character">Mufasa</div><div class="person" id="mufasa"></div></div>
-            <div class="cast"><div class="character">Sarabi</div><div class="person" id="sarabi"></div></div>
-            <div class="cast"><div class="character">Zazu</div><div class="person" id="zazu"></div></div>
-            <div class="cast"><div class="character">Scar</div><div class="person" id="scar"></div></div>
-            <div class="cast"><div class="character">Young Simba</div><div class="person" id="youngSimba"></div></div>
-            <div class="cast"><div class="character">Young Nala</div><div class="person" id="youngNala"></div></div>
-            <div class="cast"><div class="character">Shenzi</div><div class="person" id="shenzi"></div></div>
-            <div class="cast"><div class="character">Banzai</div><div class="person" id="banzai"></div></div>
-            <div class="cast"><div class="character">Ed</div><div class="person" id="ed"></div></div>
-            <div class="cast"><div class="character">Timon</div><div class="person" id="timon"></div></div>
-            <div class="cast"><div class="character">Pumbaa</div><div class="person" id="pumbaa"></div></div>
-            <div class="cast"><div class="character">Simba</div><div class="person" id="simba"></div></div>
-            <div class="cast"><div class="character">Nala</div><div class="person" id="nala"></div></div>
-            <div class="castblock"><div class="character">Ensemble</div> <div id="ensemble"></div></div>
-            <div class="castblock"><div class="character">Swings</div> <div id="swings"></div></div>
-            <div class="castblock"><div class="character">Walking Covers</div> <div id="walkingCovers"></div></div>
-            <div class="castblock"><div class="character">This performance will be conducted by</div> <div id="conductor"></div></div>
-            <div class="castblock"><div class="character">The Lion King Orchestra</div> <div id="orchestra"></div></div>
-            <div class="castblock"><div class="character">Company Management</div> <span style="margin-right: 10px;" id="companyManager"></span><span id="deputyCompanyManager"></span></div>
+            <h1 id="performance2"></h1>
+            <div class="cast" id="rafiki"></div>
+            <div class="cast" id="mufasa"></div>
+            <div class="cast" id="sarabi"></div>
+            <div class="cast" id="zazu"></div>
+            <div class="cast" id="scar"></div>
+            <div class="cast" id="youngSimba"></div>
+            <div class="cast" id="youngNala"></div>
+            <div class="cast" id="shenzi"></div>
+            <div class="cast" id="banzai"></div>
+            <div class="cast" id="ed"></div>
+            <div class="cast" id="timon"></div>
+            <div class="cast" id="pumbaa"></div>
+            <div class="cast" id="simba"></div>
+            <div class="cast" id="nala"></div>
+            <div class="castblock" id="ensemble"></div>
+            <div class="castblock" id="swings"></div>
+            <div class="castblock" id="walkingCovers"></div>
+            <div class="castblock" id="conductor"></div>
+            <div class="castblock" id="orchestra"></div>
+            <div class="castblock" id="companyManager"></div>
         </div>
         <div class="slide" id="slide2">
             <h1>The Lion King Production Team</h1>
@@ -125,28 +125,47 @@
           // Check if the data is of expected type/format
           if (typeof data === 'object' && data !== null) {
             // Update the content of the divs with the received data
-            document.getElementById("type2").innerText = data.performance2 || '';
-            document.getElementById("rafiki").innerText = data.rafiki || 'loading...';
-            document.getElementById("mufasa").innerText = data.mufasa || 'loading...';
-            document.getElementById("sarabi").innerText = data.sarabi || 'loading...';
-            document.getElementById("zazu").innerText = data.zazu || 'loading...';
-            document.getElementById("scar").innerText = data.scar || 'loading...';
-            document.getElementById("youngSimba").innerText = data.youngSimba || 'loading...';
-            document.getElementById("youngNala").innerText = data.youngNala || 'loading...';
-            document.getElementById("shenzi").innerText = data.shenzi || 'loading...';
-            document.getElementById("banzai").innerText = data.banzai || 'loading...';
-            document.getElementById("ed").innerText = data.ed || 'loading...';
-            document.getElementById("timon").innerText = data.timon || 'loading...';
-            document.getElementById("pumbaa").innerText = data.pumbaa || 'loading...';
-            document.getElementById("simba").innerText = data.simba || 'loading...';
-            document.getElementById("nala").innerText = data.nala || 'loading...';
-            document.getElementById("ensemble").innerText = data.ensemble || 'loading...';
-            document.getElementById("swings").innerText = data.swings || 'loading...';
-            document.getElementById("walkingCovers").innerText = data.walkingCovers || 'loading...';
-            document.getElementById("conductor").innerText = data.conductor || 'loading...';
-            document.getElementById("orchestra").innerText = data.orchestra || 'loading...';
-            document.getElementById("companyManager").innerText = "Company Manager: " + data.companyManager || 'loading...';
-            document.getElementById("deputyCompanyManager").innerText = "Deputy Company Manager: " + data.deputyCompanyManager || 'loading...';
+            document.getElementById("performance2").innerHTML = 'Appearing at this ' +  (convertNewlinesToBreaks(data.performance2 || '')) + ' performance';
+            document.getElementById("rafiki").innerHTML = 
+              '<div class="character">Rafiki</div><div class="person"> ' + (convertNewlinesToBreaks(data.rafiki || '')) + '</div>';
+              document.getElementById("mufasa").innerHTML = 
+              '<div class="character">Mufasa</div><div class="person"> ' + (convertNewlinesToBreaks(data.mufasa || '')) + '</div>';
+              document.getElementById("sarabi").innerHTML = 
+              '<div class="character">Sarabi</div><div class="person"> ' + (convertNewlinesToBreaks(data.sarabi || '')) + '</div>';
+              document.getElementById("zazu").innerHTML = 
+              '<div class="character">Zazu</div><div class="person"> ' + (convertNewlinesToBreaks(data.zazu || '')) + '</div>';
+              document.getElementById("youngSimba").innerHTML = 
+              '<div class="character">Young Simba</div><div class="person"> ' + (convertNewlinesToBreaks(data.youngSimba || '')) + '</div>';
+              document.getElementById("youngNala").innerHTML = 
+              '<div class="character">Young Nala</div><div class="person"> ' + (convertNewlinesToBreaks(data.youngNala || '')) + '</div>';
+              document.getElementById("shenzi").innerHTML = 
+              '<div class="character">Shenzi</div><div class="person"> ' + (convertNewlinesToBreaks(data.shenzi || '')) + '</div>';
+              document.getElementById("banzai").innerHTML = 
+              '<div class="character">Banzai</div><div class="person"> ' + (convertNewlinesToBreaks(data.banzai || '')) + '</div>';
+              document.getElementById("ed").innerHTML = 
+              '<div class="character">Ed</div><div class="person"> ' + (convertNewlinesToBreaks(data.ed || '')) + '</div>';
+              document.getElementById("timon").innerHTML = 
+              '<div class="character">Timon</div><div class="person"> ' + (convertNewlinesToBreaks(data.timon || '')) + '</div>';
+              document.getElementById("pumbaa").innerHTML = 
+              '<div class="character">Pumbaa</div><div class="person"> ' + (convertNewlinesToBreaks(data.pumbaa || '')) + '</div>';
+              document.getElementById("simba").innerHTML = 
+              '<div class="character">Simba</div><div class="person"> ' + (convertNewlinesToBreaks(data.simba || '')) + '</div>';
+              document.getElementById("nala").innerHTML = 
+              '<div class="character">Nala</div><div class="person"> ' + (convertNewlinesToBreaks(data.nala || '')) + '</div>';
+              document.getElementById("ensemble").innerHTML = 
+              '<div class="character">Ensemble</div><div> ' + (convertNewlinesToBreaks(data.ensemble || '')) + '</div>';
+              document.getElementById("swings").innerHTML = 
+              '<div class="character">Swings</div><div> ' + (convertNewlinesToBreaks(data.swings || '')) + '</div>';
+              document.getElementById("walkingCovers").innerHTML = 
+              '<div class="character">Walking Covers</div><div> ' + (convertNewlinesToBreaks(data.walkingCovers || '')) + '</div>';
+              document.getElementById("conductor").innerHTML = 
+              '<div class="character">This performance will be conducted by</div><div> ' + (convertNewlinesToBreaks(data.conductor || '')) + '</div>';
+              document.getElementById("orchestra").innerHTML = 
+              '<div class="character">The Lion King Orchestra</div><div> ' + (convertNewlinesToBreaks(data.orchestra || '')) + '</div>';
+              document.getElementById("companyManager").innerHTML = 
+              '<div class="character">Company Management</div><span style="margin-right: 10px;"> ' + (convertNewlinesToBreaks(data.companyManager || '')) + '</span><span>' + (convertNewlinesToBreaks(data.deputyCompanyManager || '')) + '</span>';
+      
+      
       
             // Assuming data.coversList is a string, you can check if it's empty or not
 
