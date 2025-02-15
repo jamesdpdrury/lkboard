@@ -95,16 +95,18 @@
                     <div class="tech" id="assistantWHAM"></div>
                 </div>
                 <div class="department">
-                    <h2>CHAPERONES</h2>
-                    <div class="tech" id="headChaperone"></div>
-                    <div class="tech" id="deputyHeadChaperone"></div>
-                    <div class="tech" id="chaperone"></div>
-                </div>
+                  <h2>AUTOMATION</h2>
+                  <div class="tech" id="headAuto"></div>
+                  <div class="tech" id="deputyHeadAuto"></div>
+                  <div class="tech" id="assistantAuto"></div>
+              </div>
                 <div class="department">
-                    <h2>AUTOMATION</h2>
-                    <div class="tech" id="headAuto"></div>
-                    <div class="tech" id="deputyHeadAuto"></div>
-                    <div class="tech" id="assistantAuto"></div>
+                  <h2>Children's Casting and General Management</h2>
+                  <div class="tech" id="headChaperone"></div>
+              </div>
+                <div class="department">
+                    <h2>CHAPERONES</h2>
+                    <div class="tech" id="chaperone"></div>
                 </div>
                 <div class="department">
                     <h2>PHYSIOTHERAPY</h2>
@@ -245,11 +247,10 @@
             document.getElementById("assistantWHAM").innerHTML = 
               '<span class="role">Assistant Hair & Make-Up</span> ' + (convertNewlinesToBreaks(data.assistantWHAM || 'loading...'));
             document.getElementById("headChaperone").innerHTML = 
-              '<span class="role">Head Chaperone</span> ' + (convertNewlinesToBreaks(data.headChaperone || 'loading...'));
-            document.getElementById("deputyHeadChaperone").innerHTML = 
-              '<span class="role">Deputy Head Chaperone</span> ' + (convertNewlinesToBreaks(data.deputyHeadChaperone || 'loading...'));
+              '' + (convertNewlinesToBreaks(data.headChaperone || 'loading...'));
+           
             document.getElementById("chaperone").innerHTML = 
-              '<span class="role">Chaperones</span> ' + (convertNewlinesToBreaks(data.chaperone || 'loading...'));
+              '' + (convertNewlinesToBreaks(data.chaperone || 'loading...'));
             document.getElementById("headAuto").innerHTML = 
               '<span class="role">Head of Automation</span> ' + (convertNewlinesToBreaks(data.headAuto || 'loading...'));
             document.getElementById("deputyHeadAuto").innerHTML = 
