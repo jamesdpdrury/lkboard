@@ -52,14 +52,14 @@
                 </div>
                 <div class="department">
                     <h2>SOUND</h2>
-                    <div class="tech" id="headSound"></div>
-                    <div style="display:none;" class="tech" id="deputyHeadSound"></div>
+                    <div style="display:none;" class="tech" id="headSound"></div>
+                    <div class="tech" id="deputyHeadSound"></div>
                     <div class="tech" style="display:none;" id="seniorMixer"></div>
                     <div class="tech" id="assistantSound"></div>
                 </div>
                 <div class="department">
                     <h2>WARDROBE</h2>
-                    <div class="tech" id="headWardrobe"></div>
+                    <div style="display:none;" class="tech" id="headWardrobe"></div>
                     <div class="tech" id="deputyHeadWardrobe"></div>
                     <div class="tech" id="assistantWardrobe"></div>
                     <div class="tech" id="assistantWardrobeSwings"></div>
@@ -211,7 +211,7 @@
             document.getElementById("headSound").innerHTML = 
               '<span class="role">Head of Sound</span> ' + (convertNewlinesToBreaks(data.headSound || 'loading...'));
             document.getElementById("deputyHeadSound").innerHTML = 
-              '<span class="role">Deputy Head of Sound</span> ' + (convertNewlinesToBreaks(data.deputyHeadSound || 'loading...'));
+              '<span class="role">Acting Deputy Head of Sound</span> ' + (convertNewlinesToBreaks(data.deputyHeadSound || 'loading...'));
             document.getElementById("seniorMixer").innerHTML = 
               '<span class="role">Senior Mixer</span> ' + (convertNewlinesToBreaks(data.seniorMixer || 'loading...'));
             document.getElementById("assistantSound").innerHTML = 
@@ -219,7 +219,7 @@
             document.getElementById("headWardrobe").innerHTML = 
               '<span class="role">Head of Wardrobe</span> ' + (convertNewlinesToBreaks(data.headWardrobe || 'loading...'));
             document.getElementById("deputyHeadWardrobe").innerHTML = 
-              '<span class="role">Deputy Head of Wardrobe</span> ' + (convertNewlinesToBreaks(data.deputyHeadWardrobe || 'loading...'));
+              '<span class="role">Acting Head of Wardrobe</span> ' + (convertNewlinesToBreaks(data.deputyHeadWardrobe || 'loading...'));
             document.getElementById("assistantWardrobe").innerHTML = 
               '<span class="role">Wardrobe Assistants</span> ' + (convertNewlinesToBreaks(data.assistantWardrobe || 'loading...'));
             document.getElementById("assistantWardrobeSwings").innerHTML = 
