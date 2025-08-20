@@ -59,7 +59,7 @@
                 </div>
                 <div class="department">
                     <h2>WARDROBE</h2>
-                    <div style="display:none;" class="tech" id="headWardrobe"></div>
+                    <div class="tech" id="headWardrobe"></div>
                     <div class="tech" id="deputyHeadWardrobe"></div>
                     <div class="tech" id="assistantWardrobe"></div>
                     <div class="tech" id="assistantWardrobeSwings"></div>
@@ -217,9 +217,9 @@
             document.getElementById("assistantSound").innerHTML = 
               '<span class="role">Assistant Sound</span> ' + (convertNewlinesToBreaks(data.assistantSound || 'loading...'));
             document.getElementById("headWardrobe").innerHTML = 
-              '<span class="role">Head of Wardrobe</span> ' + (convertNewlinesToBreaks(data.headWardrobe || 'loading...'));
+              '<span class="role">Acting Head of Wardrobe</span> ' + (convertNewlinesToBreaks(data.headWardrobe || 'loading...'));
             document.getElementById("deputyHeadWardrobe").innerHTML = 
-              '<span class="role">Acting Head of Wardrobe</span> ' + (convertNewlinesToBreaks(data.deputyHeadWardrobe || 'loading...'));
+              '<span class="role">Acting Deputy Head of Wardrobe</span> ' + (convertNewlinesToBreaks(data.deputyHeadWardrobe || 'loading...'));
             document.getElementById("assistantWardrobe").innerHTML = 
               '<span class="role">Wardrobe Assistants</span> ' + (convertNewlinesToBreaks(data.assistantWardrobe || 'loading...'));
             document.getElementById("assistantWardrobeSwings").innerHTML = 
