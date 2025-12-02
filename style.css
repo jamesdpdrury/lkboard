@@ -57,7 +57,11 @@ body {
     height: 1942px;
 margin: -22px 0 0 0;
 padding: 0;
-color: #581d0f;
+    /* Change back to this */
+p {
+  color: #581d0f;
+}
+color: #ffffff;
 text-align: center;
 font-family: Sorren;
 }
