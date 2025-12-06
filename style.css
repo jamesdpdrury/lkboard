@@ -57,11 +57,13 @@ body {
     height: 1942px;
 margin: -22px 0 0 0;
 padding: 0;
-    /* Change back to this and remove text-shadow */
+    /* Change back to this and remove text-shadow & stroke*/
 p {
   color: #581d0f;
 }
     text-shadow: 0px 0px 5px #581d0f;
+        paint-order: stroke fill;
+    -webkit-text-stroke: 0.1em black;
 color: #ffffff;
 text-align: center;
 font-family: Sorren;
