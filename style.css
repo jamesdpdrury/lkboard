@@ -114,6 +114,7 @@ font-family: Sorren;
     margin: 0 auto;
     padding: 20px;
     position: absolute;
+    transform: scale(2) translate(25%, 25%);
 }
 h1 {
     text-transform: uppercase;
@@ -190,6 +191,4 @@ width: 48%;
 #slide1 {
     background-image: url(Roger.jpg);
     background-size: cover;
-    top: 0;
-    left: 0;
 }
