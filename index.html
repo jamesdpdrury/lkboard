@@ -8,7 +8,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="slide" id="slide1">
+       <div class="slide" id="slide1">
+        </div>
+        <div class="slide" id="slide2">
             <h1 id="performance2"></h1>
             <div class="cast" id="rafiki"></div>
             <div class="cast" id="mufasa"></div>
@@ -31,7 +33,7 @@
             <div class="castblock" id="orchestra"></div>
             <div class="castblock" id="companyManager"></div>
         </div>
-        <div class="slide" id="slide2">
+        <div class="slide" id="slide3">
             <h1>The Lion King Production Team</h1>
             <div class="left">
                 <div class="department">
@@ -125,6 +127,7 @@
             </div>
         </div>
     </div>
+    
     <iframe style="display: none;" src="https://script.google.com/macros/s/AKfycbz-xQtunVDdXA4Xa2dweolffp2fsAVMZi_ErS-Evc836KzPfj1u7eWKRJudswOdhhd4uw/exec" id="data-iframe"></iframe>
 
     <script>
@@ -136,10 +139,10 @@
         window.addEventListener('message', function(event) {
           var data = event.data;
       
-          // Check if the data is of expected type/format
-          if (typeof data === 'object' && data !== null) {
+         // Check if the data is of expected type/format
+         if (typeof data === 'object' && data !== null) {
             // Update the content of the divs with the received data
-            document.getElementById("performance2").innerHTML = 'Appearing at this ' +  (convertNewlinesToBreaks(data.performance2 || '')) + ' performance';
+            
             document.getElementById("rafiki").innerHTML = 
               '<div class="character">Rafiki</div><div class="person"> ' + (convertNewlinesToBreaks(data.rafiki || '')) + '</div>';
               document.getElementById("mufasa").innerHTML = 
@@ -270,7 +273,7 @@
       </script>
       
   
-      <script>
+     <script>
         const slides = document.querySelectorAll('.slide');
         let currentSlide = 0;
         let interval;
