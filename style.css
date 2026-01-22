@@ -188,7 +188,3 @@ width: 48%;
 .visible {
     opacity: 1;
 }
-#slide1 {
-    background-image: url(Roger.jpg);
-    background-size: cover;
-}
